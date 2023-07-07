@@ -41,7 +41,7 @@ function entrar(){
   })
    
   if(usuario.value == "Admin" && senha.value == "s3nh@"){
-    window.location.href = './register.html'
+    window.location.href = './assets/html/register.html'
     
     let mathRandom = Math.random().toString(16).substr(2)
     let token = mathRandom + mathRandom
