@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+}
+
+:root {
+    --cor1: rgb(1, 52, 109);
+    --cor2: linear-gradient(to right, #1753c2, #0c476e);
+    --cor3: linear-gradient(to right, #268f11, #05b61d);
+    --cor4: linear-gradient(to right, #6489b4, #695aeb, #2d77bd);
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+body {
+    /* background: rgba(128, 128, 128, 0.336); */
+    /* background-color: white; */
+    background-image: url(../img/cidade-fundo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    /* margin-top: -25px; */
+    height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  /* background-color: #ffffff80; */
+  background-color: white;
+  padding: 20px;
+  border: 2px solid var(--cor1);
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 9px;
+  color: #272262
+}
+
+h3{
+    color: white;
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #272262;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 14px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+  color: #272262;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0
+}
+
+button{
+  background-color: transparent;
+  border-color: #272262;
+  color: #272262;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #272262;
+  color: #fff;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+
+p{
+  color: #272262;
+  font-size: 14pt;
+  text-align: center;
+}
+
+a{
+  color: #7a3077;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+a:hover{
+  color: #272262;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #272262;
+}
+
+ #msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    background:var(--cor1);
+    width: 100%;
+}
+
+.navbar {
+    background-color: var(--orange);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config {
+    aspect-ratio: 1/1;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--cor1);
+}
+
+.logo-top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo {
+    width: 70px;
+}
+
+
+@media (max-width:700px) {
+
+  h3{
+      font-size: 0.97em;
+      max-width: 85%;
+      margin: auto;
+  }
+  
+  
+}
+
+@media (max-width:500px) {
+
+h3{
+    font-size: 0.79em;
+    max-width: 80%;
+}
+
+}
