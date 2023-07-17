@@ -107,7 +107,7 @@ links.onclick = function clear() {
                 <a class="link-bt" href="http://scaweb.saude.gov.br/scaweb/" target="_blank">
                 <div>
                     <img class="logo-op"
-                        src="https://supe.maceio.al.gov.br/siimm-semge/imgs/logo_prefeitura.png?pfdrid_c=true"
+                        src="../img/MS.png"
                         alt="logo prefeitura">
                 </div>
             </a>
