@@ -59,8 +59,8 @@ links.onclick = function clear() {
                 <a class="link-bt" href="https://mail.sms.maceio.al.gov.br/#1" target="_blank">
                 <div>
                     <img class="logo-op"
-                        src="https://supe.maceio.al.gov.br/siimm-semge/imgs/logo_prefeitura.png?pfdrid_c=true"
-                        alt="logo prefeitura">
+                        src="../img/ZIMBRA.png"
+                        alt="logo ZIMBRA">
                 </div>
             </a>
             <p class="m-title">ZIMBRA</p>
@@ -71,7 +71,7 @@ links.onclick = function clear() {
                 <a class="link-bt" href="https://supe.maceio.al.gov.br/pages/comum/login.faces" target="_blank">
                     <div>
                         <img class="logo-op"
-                            src="https://supe.maceio.al.gov.br/siimm-semge/imgs/logo_prefeitura.png?pfdrid_c=true"
+                            src="../img/logo_prefeitura.png"
                             alt="logo prefeitura">
 
                     </div>
@@ -85,7 +85,7 @@ links.onclick = function clear() {
                 target="_blank">
                 <div>
                     <img class="logo-op"
-                        src="https://supe.maceio.al.gov.br/siimm-semge/imgs/logo_prefeitura.png?pfdrid_c=true"
+                        src="../img/LIC.png"
                         alt="logo prefeitura">
                 </div>
             </a>
@@ -96,7 +96,7 @@ links.onclick = function clear() {
                 <a class="link-bt" href="https://www.diariomunicipal.com.br/maceio/adesao" target="_blank">
                 <div>
                     <img class="logo-op"
-                        src="https://supe.maceio.al.gov.br/siimm-semge/imgs/logo_prefeitura.png?pfdrid_c=true"
+                        src="../img/logo_prefeitura.png"
                         alt="logo prefeitura">
                 </div>
             </a>
@@ -118,7 +118,7 @@ links.onclick = function clear() {
                 <a class="link-bt" href="https://consultas.anvisa.gov.br/#/medicamentos/" target="_blank">
                 <div>
                     <img class="logo-op"
-                        src="https://supe.maceio.al.gov.br/siimm-semge/imgs/logo_prefeitura.png?pfdrid_c=true"
+                        src="../img/ANVISA.png"
                         alt="logo prefeitura">
                 </div>
             </a>
@@ -129,7 +129,7 @@ links.onclick = function clear() {
                 <a class="link-bt" href="https://consultas.anvisa.gov.br/#/saude/" target="_blank">
                 <div>
                     <img class="logo-op"
-                        src="https://supe.maceio.al.gov.br/siimm-semge/imgs/logo_prefeitura.png?pfdrid_c=true"
+                        src="../img/ANVISA.png"
                         alt="logo prefeitura">
                 </div>
             </a>
