@@ -110,7 +110,7 @@ function cadastrar(){
   }
 }
 
-btn.addEventListener('click', ()=>{
+btn.addEventListener('mouseout', ()=>{
   let inputSenha = document.querySelector('#senha')
   
   if(inputSenha.getAttribute('type') == 'password'){
@@ -120,7 +120,27 @@ btn.addEventListener('click', ()=>{
   }
 })
 
-btnConfirm.addEventListener('click', ()=>{
+btn.addEventListener('mouseover', () => {
+  let inputSenha = document.querySelector('#senha')
+
+  if (inputSenha.getAttribute('type') == 'password') {
+    inputSenha.setAttribute('type', 'text')
+  } else {
+    inputSenha.setAttribute('type', 'password')
+  }
+})
+
+btnConfirm.addEventListener('mouseout', ()=>{
+  let inputConfirmSenha = document.querySelector('#confirmSenha')
+  
+  if(inputConfirmSenha.getAttribute('type') == 'password'){
+    inputConfirmSenha.setAttribute('type', 'text')
+  } else {
+    inputConfirmSenha.setAttribute('type', 'password')
+  }
+})
+
+btnConfirm.addEventListener('mouseover', ()=>{
   let inputConfirmSenha = document.querySelector('#confirmSenha')
   
   if(inputConfirmSenha.getAttribute('type') == 'password'){
