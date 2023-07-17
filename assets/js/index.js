@@ -1,53 +1,68 @@
+// CONFIG PARA O CAMPO SENHA - REVELAR
+
 let btn = document.querySelector('.fa-eye')
 
-btn.addEventListener('click', ()=>{
+btn.addEventListener('mouseout', () => {
   let inputSenha = document.querySelector('#senha')
-  
-  if(inputSenha.getAttribute('type') == 'password'){
+
+  if (inputSenha.getAttribute('type') == 'password') {
     inputSenha.setAttribute('type', 'text')
   } else {
     inputSenha.setAttribute('type', 'password')
   }
 })
 
-function entrar(){
-  let usuario = document.querySelector('#usuario');
+btn.addEventListener('mouseover', () => {
+  let inputSenha = document.querySelector('#senha')
+
+  if (inputSenha.getAttribute('type') == 'password') {
+    inputSenha.setAttribute('type', 'text')
+  } else {
+    inputSenha.setAttribute('type', 'password')
+  }
+})
+
+// /////////////////////////////////////////////////
+
+
+function entrar() {
+  let usuario = document.querySelector('#usuario')
   let userLabel = document.querySelector('#userLabel')
-  
+
   let senha = document.querySelector('#senha')
   let senhaLabel = document.querySelector('#senhaLabel')
-  
+
   let msgError = document.querySelector('#msgError')
   let listaUser = []
-  
+
   let userValid = {
-    nome: null,
-    user: null,
-    senha: null
+    nome: '',
+    user: '',
+    senha: ''
   }
-  
-  listaUser = JSON.parse(localStorage.getItem('listaUser'));
-  
+
+  listaUser = JSON.parse(localStorage.getItem('listaUser'))
+
   listaUser.forEach((item) => {
-    if(usuario.value == item.userCad && senha.value == item.senhaCad){
-       
+    if (usuario.value == item.userCad && senha.value == item.senhaCad) {
+
       userValid = {
-         nome: item.nomeCad,
-         user: item.userCad,
-         senha: item.senhaCad
-       }
-      
+        nome: item.nomeCad,
+        user: item.userCad,
+        senha: item.senhaCad
+      }
+
     }
   })
-   
-  if(usuario.value == userValid.user && senha.value == userValid.senha){
+
+  if (usuario.value == userValid.user && senha.value == userValid.senha) {
     window.location.href = './assets/html/home.html'
-    
+
     let mathRandom = Math.random().toString(16).substr(2)
     let token = mathRandom + mathRandom
-    
+
     localStorage.setItem('token', token)
-    localStorage.setItem('userLogado', JSON.stringify(userValid));
+    localStorage.setItem('userLogado', JSON.stringify(userValid))
   } else {
     userLabel.setAttribute('style', 'color: red')
     usuario.setAttribute('style', 'border-color: red')
@@ -57,7 +72,7 @@ function entrar(){
     msgError.innerHTML = 'Usuário ou senha incorretos'
     usuario.focus()
   }
-  
+
 }
 
 
