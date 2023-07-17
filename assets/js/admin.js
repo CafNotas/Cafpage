@@ -1,14 +1,29 @@
+
+// CONFIG PARA O CAMPO SENHA - REVELAR
+
 let btn = document.querySelector('.fa-eye')
 
-btn.addEventListener('click', ()=>{
+btn.addEventListener('mouseout', () => {
   let inputSenha = document.querySelector('#senha')
-  
-  if(inputSenha.getAttribute('type') == 'password'){
+
+  if (inputSenha.getAttribute('type') == 'password') {
     inputSenha.setAttribute('type', 'text')
   } else {
     inputSenha.setAttribute('type', 'password')
   }
 })
+
+btn.addEventListener('mouseover', () => {
+  let inputSenha = document.querySelector('#senha')
+
+  if (inputSenha.getAttribute('type') == 'password') {
+    inputSenha.setAttribute('type', 'text')
+  } else {
+    inputSenha.setAttribute('type', 'password')
+  }
+})
+
+// /////////////////////////////////////////////////////////////
 
 function entrar(){
   let usuario = document.querySelector('#usuario')
@@ -41,7 +56,7 @@ function entrar(){
   })
    
   if(usuario.value == "Admin" && senha.value == "s3nh@"){
-    window.location.href = '../html/register.html'
+    window.location.href = './register.html'
     
     let mathRandom = Math.random().toString(16).substr(2)
     let token = mathRandom + mathRandom
