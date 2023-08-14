@@ -75,4 +75,9 @@ function entrar() {
 
 }
 
+document.addEventListener('keypress', function(e){
+       if(e.which == 13){
+         entrar();
+       }
+    }, false);
 
